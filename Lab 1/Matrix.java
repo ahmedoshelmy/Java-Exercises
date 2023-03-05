@@ -100,13 +100,15 @@ public class Main {
         // Printing --------------------------
         Mx.Print();
         //Transpose
+        System.out.println("After Transpose : ");
         Mx.Transpose();
         Mx.Print();
         // Adding two Matrices ;
         Matrix Mx2 = new Matrix(2 , 5) ;
-        Mx.SetNumbers(arr) ;
+        Mx2.SetNumbers(arr) ;
         Mx2.Add(Mx);
-        Mx.Print();
+        System.out.println("After Adding : ");
+        Mx2.Print();
         // Identity Matrix
         IdentityMatrix Mx3 = new IdentityMatrix(3,3);
         Mx3.SetNumbers(arr) ; // Invalid
